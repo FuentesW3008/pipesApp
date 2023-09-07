@@ -1,0 +1,27 @@
+<p-panel header="PiPes Numéricos" class="p-2">
+  <p>
+    PiPes incluidos en Angular - Usualmente en el Common Module
+  </p>
+</p-panel>
+
+<div class="grid">
+
+  <div class="col-12 md:col-4">
+    <p-card header="Total Fondo" subheader="SafeCapital">
+      {{ totalSells + 1551235 | number: '1.2-2' }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Inversión " subheader="SafeCapital">
+      {{ totalSells | currency: 'COP':'symbol': '1.2-4'}}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Ganacia Porcentual " subheader="SafeCapital">
+      {{percent | percent:'1.2-2' }}
+    </p-card>
+  </div>
+
+</div>
